@@ -1,4 +1,6 @@
 .env
+development
+shopware
 docker-compose.override.yml
 node_modules
 .vscode
