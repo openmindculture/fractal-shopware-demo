@@ -28,4 +28,7 @@ should probably have their own repositories below `custom`.
 
 ## development installation on localhost (dockware)
 
-- ...
+```
+git clone git@github.com:shopware/development.git
+cd development
+git clone git@github.com:shopware/platform.git
