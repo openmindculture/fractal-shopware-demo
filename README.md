@@ -1,6 +1,9 @@
 # fractal-shopware-demo
 Shopware 6 demo shop playground installation
 
+- to practice for Shopware 6 developer certification
+- to test and develop [IngoSFraktalistheme](https://github.com/openmindculture/IngoSFraktalistheme)
+
 This main directory will ignore the shopware repositories
 - development
 - shopware
