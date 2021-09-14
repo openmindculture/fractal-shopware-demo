@@ -12,7 +12,8 @@ Generated files from production server are checked in to
 - generated
 
 while new themes and plugins below `development`
-should probably have their own repositories below `custom`.
+should have their own repositories below `custom`,
+e.g. /development/custom/plugins/IngoSFraktalistheme
 
 ## changelog
 
