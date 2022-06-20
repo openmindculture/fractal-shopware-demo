@@ -36,7 +36,7 @@ e.g. /development/custom/plugins/IngoSFraktalistheme
 
 should start a demo server on localhost:8080 (untested)
 
-## development installation on localhost (dockware)
+## development installation on localhost
 
 ```
 git clone git@github.com:shopware/development.git
@@ -52,6 +52,11 @@ Enter the container like
 docker exec -it ${app_server_id} sh
 ```
 
+or
+
+```
+./psh.phar docker:ssh
+```
 Continue inside the container
 
 ```
@@ -66,6 +71,26 @@ using the initial default credentials
 
 - User: admin
 - Login: shopware
+
+## Update local installation
+
+Merge the latest updates from Shopware development upstream into the local repository:
+
+```
+git pull
+cd platform && git pull
+```
+
+Clear and rebuild the depencies.
+If necessary, run (probably both in development, and development/platform ?):
+
+```
+rm composer.lock
+rm -rf vendor/*
+composer install
+```
+
+If necessary, rebuild and reinstall Shopware, as described above.
 
 ## Troubleshooting
 
