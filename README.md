@@ -90,7 +90,17 @@ rm -rf vendor/*
 composer install
 ```
 
-If necessary, rebuild and reinstall Shopware, as described above.
+You should not need to rebuild and reinstall Shopware, use the update command instead.
+Inside the docker container started in `development`
+using `./psh.phar docker:start`
+
+enter the container using `./psh.phar docker:ssh`
+
+Inside the container, type
+
+```
+./psh.phar update # don't install but use update!
+```
 
 ## Troubleshooting
 
